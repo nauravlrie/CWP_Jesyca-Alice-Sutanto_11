@@ -1,21 +1,26 @@
 package looping2;
 
 public class ForLoopNested {
-    public String getGrid(int maxNumber) {
+    public String getGrid(int maximalNumber) {
+        //Menggunakan StringBuilder untuk efisiensi string
         StringBuilder grid = new StringBuilder(); 
-        
-            for (int row = 1; row <= maxNumber; row++) {
-            for (int col = 1; col <= maxNumber; col++) {
+        // Loop untuk setiap kolom dalam baris
+            for (int row = 1; row <= maximalNumber; row++) {
+                //Loop untuk setiap kolom dalam baris
+            for (int col = 1; col <= maximalNumber; col++) {
                 grid.append("Row ").append(row).append(" Col ").append(col); 
-                if (col < maxNumber) {
+                // Menambahkan kolom baru
+                if (col < maximalNumber) {
                     grid.append("\n");
 
                 }
             }
-                if (row < maxNumber) {
+            // Menambahkan baris baru
+                if (row < maximalNumber) {
                 grid.append("\n");
             }
         }
         return grid.toString();
+        // return hasil gridnya
     }
 }
