@@ -1,14 +1,15 @@
 package condition1;
 
 public class DayOfWeek {
+    // menampilkan nama hari dari angka yang dimasukkan
 public String getDayName(int codeInputDay) {
     String dayName;
-    switch (codeInputDay) { 
-        case 1:
-        dayName = "Day: Monday";
+    switch (codeInputDay) { // menggunakan switch case 
+        case 1: // jika angka 1
+        dayName = "Day: Monday"; // menampilkan hari Senin dan begitu juga untuk angka lainnya
             break;
-        case 2:
-        dayName = "Day: Tuesday";
+        case 2: // jika angka 2
+        dayName = "Day: Tuesday"; // menampilkan hari selasa
             break;
         case 3:
         dayName = "Day: Wednesday";
