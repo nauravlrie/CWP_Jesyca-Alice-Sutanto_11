@@ -1,16 +1,16 @@
 package looping1;
 
 public class WhileLoop {
-    public int getEventNumbersAndSum(int maximalNumber) {
+    public int getEvenNumbersAndSum(int maximalNumber) {
         int sum = 0;
         int i = 1;
         while (i <= maximalNumber) {
-            if (i % 2 == 0) {
-                sum += i;
+            if (i % 2 == 0) {  
+                sum += i; 
             }
-            i++;
+            
+            i++; 
         }
         return sum;
     }
-    
 }
