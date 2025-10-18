@@ -1,6 +1,7 @@
 package operator;
 
 public class Number {
+    //Menampilkan hasil operasi
 public String getOperatorResults(int codeInputA, int codeInputB) {
     return "Sum: " + (codeInputA + codeInputB) + "\n" + 
            "Product: " + (codeInputA * codeInputB) + "\n" +
